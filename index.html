@@ -38,15 +38,16 @@
         }
 
         #my-image {
-        width: 50px;
-        height: 50px;
-        position: absolute;
-        top: 80%;
-        left: 50%;
-        border-radius: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1; /* Đảm bảo hình ảnh nằm trên các phần tử khác */
-    }
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            /* Đảm bảo hình ảnh nằm trên các phần tử khác */
+        }
 
 
         .fragment {
@@ -780,11 +781,14 @@
         color: indianred;
         font-size: 50px;
         top: 80%;">Như bấm vào đây!!!</p>
-       
-       <audio autoplay loop controls style="display:none;">
-    <source src="x.mp3" type="audio/mpeg"></audio>
+
+        <audio autoplay loop controls style="display:none;">
+            <source src="x.mp3">
+        </audio>
+
 
     </div>
+
 
 
 
@@ -793,7 +797,9 @@
     <!-- aa3 -->
     <script>
 
-
+        function playVideo() {
+            document.getElementById('myVideo').src += "?autoplay=1";
+        }
 
         (() => {
             setTimeout(() => {
@@ -973,7 +979,7 @@
 
     </script>
 
-    
+
 
 </body>
 
